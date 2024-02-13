@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pyaudioanalysis = "*"
+jupyterlab = "*"
+librosa = "*"
 
 [dev-packages]
 
