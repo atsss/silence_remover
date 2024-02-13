@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "5bc9015167eae7e8da2271caec78284acdf0f474db59d14dc2db21ceddecb6d9"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pyaudioanalysis": {
+            "hashes": [
+                "sha256:03e0bb8d3831cf4cb56c8350857c0e4372dde834372686cea6bff48099a3b85e"
+            ],
+            "index": "pypi",
+            "version": "==0.3.14"
+        }
+    },
+    "develop": {}
+}
