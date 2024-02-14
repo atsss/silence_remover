@@ -1,0 +1,3 @@
+librosa
+pyaudioanalysis
+pydub
