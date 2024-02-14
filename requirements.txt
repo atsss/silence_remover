@@ -1,4 +1,5 @@
 librosa
+matplotlib
 numpy
 pyaudioanalysis
 pydub
