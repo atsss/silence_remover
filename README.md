@@ -1,6 +1,8 @@
 # silence_remover
 ## References
 - https://onkar-patil.medium.com/how-to-remove-silence-from-an-audio-using-python-50fd2c00557d
+- https://github.com/respeaker/mic_hat/tree/master
+- https://people.csail.mit.edu/hubert/pyaudio/
 
 ## Development environment
 - Raspberry Pi CM4
