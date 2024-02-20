@@ -10,4 +10,5 @@ picam2.start_recording(encoder, 'test.h264', quality=Quality.HIGH)
 
 time.sleep(10)
 
+# FIXME: Need to convert from h264 to mp4: ffmpeg -i test.h264 -c copy test.mp4
 picam2.stop_recording()
