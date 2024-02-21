@@ -5,6 +5,7 @@ import numpy as np
 import wave
 import threading
 import time
+import subprocess
 
 RECORD_SECONDS = 30
 VIDEO_FILENAME = 'video.h264'
@@ -73,3 +74,5 @@ if __name__ == '__main__':
 
     video_thread.join()
     audio_thread.join()
+
+    subprocess.run(['bash', 'combine.sh'])
