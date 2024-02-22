@@ -75,4 +75,4 @@ if __name__ == '__main__':
     video_thread.join()
     audio_thread.join()
 
-    subprocess.run(['bash', 'combine.sh'])
+    subprocess.run(['bash', 'converter.sh'])
