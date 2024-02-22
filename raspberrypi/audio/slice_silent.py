@@ -22,7 +22,7 @@ def slice_silence(segments):
         extract.export(f'active-{index}.wav', format="wav")
 
 def create_audio_metadata_json(segments):
-    metadata = [{ 'start_sec': segment[0], 'end_sec': segment[1] } for segment in combined_segments]
+    metadata = [{ 'start_sec': segment[0], 'end_sec': segment[1] } for segment in segments]
     json_object = json.dumps(metadata, indent=4)
 
     with open("audio_metadata.json", "w") as outfile:
