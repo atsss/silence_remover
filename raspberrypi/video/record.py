@@ -7,7 +7,7 @@ from multiprocessing import Process
 import time
 import subprocess
 
-RECORD_SECONDS = 30
+RECORD_SECONDS = 120
 VIDEO_FILENAME = 'video.h264'
 AUDIO_FILENAME = 'audio.wav'
 
