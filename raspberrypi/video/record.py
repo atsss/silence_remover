@@ -3,7 +3,7 @@ from picamera2 import Picamera2
 import pyaudio
 import numpy as np
 import wave
-import threading
+from multiprocessing import Process
 import time
 import subprocess
 
@@ -66,8 +66,8 @@ def record_audio():
     wf.close()
 
 if __name__ == '__main__':
-    video_thread = threading.Thread(target=record_video)
-    audio_thread = threading.Thread(target=record_audio)
+    video_thread = Process(target=record_video)
+    audio_thread = Process(target=record_audio)
 
     video_thread.start()
     audio_thread.start()
