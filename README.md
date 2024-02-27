@@ -4,6 +4,7 @@
 - https://github.com/respeaker/mic_hat/tree/master
 - https://people.csail.mit.edu/hubert/pyaudio/
 - https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
+- https://github.com/timsainb/noisereduce/tree/master
 
 ## Development environment
 - Raspberry Pi CM4
