@@ -10,7 +10,7 @@ START, END = 0, 1
 
 def get_segments():
     [Fs, x] = aIO.read_audio_file(AUDIO_FILENAME)
-    segments = aS.silence_removal(x, Fs, 0.020, 0.020, smooth_window=1.0, weight=0.3, plot=True)
+    segments = aS.silence_removal(x, Fs, 0.020, 0.020, smooth_window=1.0, weight=0.3, plot=False)
     return segments
 
 def slice_silence(segments):
