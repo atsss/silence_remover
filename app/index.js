@@ -1,7 +1,7 @@
 (async function () {
   const response = await fetch('./audio_metadata.json')
   const metadata = await response.json()
-  console.log(metadata);
+  console.table(metadata);
 
   const video = document.getElementById('js-video');
 
@@ -19,8 +19,8 @@
     const currentTime = event.target.currentTime;
     for (const [index, data] of metadata.entries()) {
       const diff = Math.floor(currentTime*10)/10 - data['start_sec']
-      if (0 < diff && diff < 0.15) {
-        console.info(index, data);
+      if (0 < diff && diff < 0.35) {
+        console.info(index, data, diff);
         playAudioAfterVideo(index)
       };
     };
