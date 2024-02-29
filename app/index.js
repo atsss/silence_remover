@@ -1,9 +1,29 @@
-(async function () {
+window.addEventListener('load', async function () {
+  const video = document.getElementById('js-video');
+  const table = document.getElementById('js-table');
+
   const response = await fetch('./audio_metadata.json')
   const metadata = await response.json()
+
+  for (const [index, data] of metadata.entries()) {
+    const row = document.createElement('tr');
+
+    let cell = document.createElement('td');
+    cell.textContent = index;
+    row.appendChild(cell);
+
+    for (const key in data) {
+      let cell = document.createElement('td');
+      cell.textContent = Math.floor(data[key]);
+      row.appendChild(cell);
+    }
+    table.appendChild(row);
+
+    data.hasPlayed = false;
+  }
+
   console.table(metadata);
 
-  const video = document.getElementById('js-video');
 
   function playAudioAfterVideo(index) {
     video.pause()
@@ -25,4 +45,4 @@
       };
     };
   });
-}());
+})
