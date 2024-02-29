@@ -39,8 +39,14 @@ window.addEventListener('load', async function () {
     const currentTime = event.target.currentTime;
     for (const [index, data] of metadata.entries()) {
       const diff = Math.floor(currentTime*10)/10 - data['start_sec']
-      if (0 < diff && diff < 0.35) {
+
+      if (diff < -1 && data.hasPlayed) {
+        data.hasPlayed = false;
+      }
+
+      if (0 < diff && diff < 0.5 && !data.hasPlayed) {
         console.info(index, data, diff);
+        data.hasPlayed = true;
         playAudioAfterVideo(index)
       };
     };
