@@ -12,3 +12,9 @@
 - IMX219
 - [ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)
 - [boot/config.txt](https://github.com/atsss/RPi_configs/blob/main/bullseye/imx219_ReSpeaker.txt)
+
+## How to use
+- Jupyter Lab
+```
+docker container run -it -p 10000:8888  -v .:/home/jovyan/work [container_name]:[tag]
+```
