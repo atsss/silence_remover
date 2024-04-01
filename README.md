@@ -14,7 +14,12 @@
 - [boot/config.txt](https://github.com/atsss/RPi_configs/blob/main/bullseye/imx219_ReSpeaker.txt)
 
 ## How to use
-- Jupyter Lab
+### Jupyter Lab
+- Start container
 ```
 docker container run -it -p 10000:8888  -v .:/home/jovyan/work [container_name]:[tag]
+```
+- Open URL
+```
+http://127.0.0.1:10000
 ```
